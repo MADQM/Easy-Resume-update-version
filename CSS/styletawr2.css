@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  padding: 10%;
+}
+
+
+
+.cv {
+  display: flex;
+  border: blue solid 2px;
+  width: 100%;
+  padding: 20px;
+ 
+  justify-content: space-around;
+
+}
+
+
+
+
+
+
+.leftcolumn {   
+  
+  margin: 40px;
+   
+    
+  }
+  
+ 
+  .rightcolumn {
+    width: 35%;
+    background-color: #f1f1f1;
+    margin: 40px;
+    display: block;
+    margin: 20px 0;
+    
+    text-align: center;
+    padding: 25px;
+  }
+
+  h1
+  {
+    color: rgb(120, 120, 241);
+    font-size: xxx-large;
+    font-weight: bolder;
+  }
+
+
+  .topnav {
+    display: flex;
+margin: 50px 20px;  }
+
+
+  .topnav div li {
+    font-size: large;
+    color: gray;
+    margin-right: 20px;
+  }
+
+  h2 {
+    color: rgb(120, 120, 241);
+    margin: 20px;
+    font-size: x-large;
+  }
+
+  h3 {
+    font-size: large;
+    background-color: rgb(171, 171, 231);
+    width: fit-content;
+    padding: 5px;
+    border-radius: 15px 50px 15px 15px;
+    margin: 20px;
+  }
+
+
+  .edu , .work {
+    display: flex;
+  }
+
+ 
+
+  .university {
+
+    margin: 21px 186px 20px 20px;
+    position: relative;
+    
+  }
+
+  .work 
+{
+  margin: 21px 100px 20px 20px;
+    position: relative;
+}
+
+  .university p {
+    font-size: large;
+    text-align: left;
+    width: fit-content;
+    max-width: 200px;
+  }
+
+  .studydate{
+    margin-top: 20px;
+    margin-left: 10px;
+    position: relative;
+    color: gray;
+  }
+
+
+.job{
+  
+  margin: 21px 100px 20px 20px;
+    position: relative;
+}
+
+.job p{
+  font-size: large;
+    text-align: left;
+    width: fit-content;
+    max-width: 200px;
+}
+
+
+.date{
+ 
+  margin-top: 20px;
+    margin-left: 10px;
+    position: relative;
+    color: gray;
+    
+}
+
+
+  .photo{
+    /* margin-left: 45%; */
+    margin-bottom: 40px;
+    width: 130px;
+    height: 140px;
+}
+
+
+

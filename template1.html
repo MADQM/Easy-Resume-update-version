@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/logo.png">
+    <link rel="stylesheet" href="CSS/styleTemp1.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> -->
+
+    <title>Template</title>
+</head>
+<body>
+    <header>
+            
+        <!-- <button class="btn btn-primary" id="download"> download pdf</button>  -->
+        <div class="navbar">
+
+
+            <a href="index.html" id="test"><img id="logo" src="https://image.flaticon.com/icons/png/128/2427/2427466.png" alt="logo"/>
+            <h1>Easy Resume</h1></a>
+            <a  class="nav1" href="index.html">Home</a>
+            <a  class="nav2" href="indexawr1.html">Templates</a>
+            <a  class="nav3" href="#aboutUs">About us</a>
+
+          </div>
+    
+
+        
+       
+    
+    </header>
+    <div id="buttons">
+        <form >
+            <fieldset><legend>Customize Colors</legend>
+                
+        <div id="div1">
+           <label>Change Left Side Background Color :&emsp; &ensp;</label> <button id="changeColorLeft" class="colorBtn">Change</button><br>
+           <label class="labelColor">Change Left Side Color Font : &nbsp;&emsp;&emsp;&emsp;&emsp;&nbsp;</label><button id="changeFontColorLeft" class="colorBtn">Change</button>
+        </div> <br>
+        <div id="div2">
+            <label>Change Right Side Background Color : &emsp;</label> <button id="changeColorRight" class="colorBtn">Change</button><br>
+            <label class="labelColor">Change Right Side Color Font :&emsp; &emsp;&emsp;&emsp;&nbsp;</label><button id="changeFontColorRight" class="colorBtn">Change</button>
+        </div>
+
+        <div id="btnColorContainer" >
+        <div id='div3'>&ensp;Left Side:
+            <!-- <form id="leftColorForm"> -->
+            <input type="color" value="#FCB11C" id="custColorLeft" class="boxColor">
+            <input type="submit" value="Customize Color" class="submitColor" id="leftColorForm" >
+            <!-- </form> -->
+            <!-- <form id="leftFontColorForm"> -->
+                <input type="color" value="#000000" id="custFontColorLeft" class="boxColor">
+                <input type="submit" value="Customize Font Color" class="submitColor" id="leftFontColorForm" >
+                <!-- </form> -->
+        </div>
+        <div id='div4'>Right Side:
+            <!-- <form id="rightColorForm"> -->
+            <input type="color" value="#FCF7F7" id="custColorRight" class="boxColor">
+            <input type="submit" value="Customize Color" class="submitColor" id="rightColorForm" >
+            <!-- </form> -->
+            <!-- <form id="rightFontColorForm"> -->
+                <input type="color" value="#000000" id="custFontColorRight" class="boxColor">
+                <input type="submit" value="Customize Font Color" class="submitColor" id="rightFontColorForm" >
+                <!-- </form> -->
+        </div>
+        </div>
+        <label>Font Size:</label><input type="number" step="1" id="font">
+        <div id="defaultBtns">
+            <!-- <label>Font Size</label><input type="number" step="1" id="font"> -->
+            <button id="reset" class="colorBtn" >Reset</button>
+            <button id="download" class="colorBtn">Download PDF File</button>
+            <!-- <button id="hideBtns" class="colorBtn">Hide All Buttons to download</button> -->
+        </div>
+    </fieldset>
+        </form>
+    </div>
+    <div class="card" id="downloadPdf">
+    <section class="container">
+        <section class="leftSection">
+            <div class="imagePart">
+                <img id="userImg" src="./Images/QusayPic.jpg" ><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"><label for="file" id="imageLabel">Upload Image</label>
+
+                <input id="nameInput" class="leftInput1" placeholder="Enter your name"><h1 id="userName">Qusay Al-Amarat</h1> <span id="edit1" class="edit">Edit</span><span id="delete1" class="delete">Delete</span>
+                <input id="titleInput" class="leftInput1" placeholder="Enter your job title"><h1 id="userTitle">Web developer</h1><span id="edit2" class="edit">Edit</span><span id="delete2" class="delete">Delete</span>
+                <h1 class="headers">Contacts :</h1>
+                <hr class="leftHR" >
+            </div>
+
+            <div class="contactPart">
+                <ul class="contact">
+                    <div>   <li id="emailItem">     <img src="./Images/email.png" >       <input id="emailInput" class="leftInput2" placeholder="Enter your email">               <span id="email">contact 1   </span>    </li>  <span id="edit3" class="edit">Edit</span>  <span id="delete3" class="delete">Delete</span>  </div>
+                    <div>   <li id="phoneItem">     <img src="./Images/phone-call.png" >  <input id="phoneInput" class="leftInput2" placeholder="Enter your phone number">        <span id="phone">contact 1   </span>    </li>  <span id="edit4" class="edit">Edit</span>  <span id="delete4" class="delete">Delete</span>  </div>
+                    <div>   <li id="addressItem">   <img src="./Images/location.png" >    <input id="addressInput" class="leftInput2" placeholder="Enter your Address">           <span id="address">contact 1 </span>    </li>  <span id="edit5" class="edit">Edit</span>  <span id="delete5" class="delete">Delete</span>  </div>
+                    <div>   <li id="linkedinItem">  <img src="./Images/linkedin.png" >    <input id="linkedinInput" class="leftInput2" placeholder="Enter your linkedin account"> <span id="linkedin">contact 1</span>    </li>  <span id="edit6" class="edit">Edit</span>  <span id="delete6" class="delete">Delete</span>  </div>
+                </ul>
+                <h1 class="headers">Skills :</h1>
+                <hr class="leftHR" >
+            </div>
+            <div class="skillsPart"> 
+                <ul class="skills">
+                    <div> <input id="skill1Input" class="leftInput2" placeholder="Enter your first skill ">  <li id="skill1">skill 1</li><span id="edit7" class="edit">Edit</span>   <span id="delete7" class="delete">Delete </span> </div>
+                    <div> <input id="skill2Input" class="leftInput2" placeholder="Enter your second skill "> <li id="skill2">skill 2</li><span id="edit8" class="edit">Edit</span>   <span id="delete8" class="delete">Delete </span> </div>
+                    <div> <input id="skill3Input" class="leftInput2" placeholder="Enter your third skill ">  <li id="skill3">skill 3</li><span id="edit9" class="edit">Edit</span>   <span id="delete9" class="delete">Delete </span> </div>
+                    <div> <input id="skill4Input" class="leftInput2" placeholder="Enter your fourth skill "> <li id="skill4">skill 4</li><span id="edit10" class="edit">Edit</span>  <span id="delete10" class="delete">Delete</span> </div>
+                </ul>
+                <h1 class="headers">ُEducation :</h1>
+                <hr class="leftHR" >
+            </div>
+            <div class="educationPart">
+                <ul class="education">
+                    <li id="majorD1">
+                        <div> <input id="major1Input" class="leftInput2" placeholder="Enter your major ">     <h1 id="major1">Major 1</h1><span id="edit11" class="edit">Edit</span>  <span id="delete11" class="delete">Delete                  </span> </div>
+                        <div> <input id="study1Input" class="leftInput2" placeholder="Enter your education "> <span id="study1" class="study">study 1</span><span id="edit12" class="edit">Edit</span>  <span id="delete12" class="delete">Delete</span> </div>
+                    </li>
+                    <li id="majorD2">
+                        <div> <input id="major2Input" class="leftInput2" placeholder="Enter your major ">     <h1 id="major2">Major 2</h1><span id="edit13" class="edit">Edit</span>  <span id="delete13" class="delete">Delete</span></div>
+                        <div> <input id="study2Input" class="leftInput2" placeholder="Enter your education "> <span id="study2" class="study">study 2</span><span id="edit14" class="edit">Edit</span>  <span id="delete14" class="delete">Delete</span> </div>
+                    </li>
+                    <li id="majorD3">
+                        <div> <input id="major3Input" class="leftInput2" placeholder="Enter your major ">     <h1 id="major3">Major 3</h1><span id="edit15" class="edit">Edit</span>  <span id="delete15" class="delete">Delete                  </span> </div>
+                        <div> <input id="study3Input" class="leftInput2" placeholder="Enter your education "> <span id="study3" class="study">study 2</span><span id="edit16" class="edit">Edit</span>  <span id="delete16" class="delete">Delete</span> </div>
+                    </li>
+                    <li id="majorD4">
+                        <div> <input id="major4Input" class="leftInput2" placeholder="Enter your major ">     <h1 id="major4">Major 4</h1><span id="edit17" class="edit">Edit</span>  <span id="delete17" class="delete">Delete</span></div>
+                        <div> <input id="study4Input" class="leftInput2" placeholder="Enter your education "> <span id="study4" class="study">study 4</span><span id="edit18" class="edit">Edit</span>  <span id="delete18" class="delete">Delete</span> </div>
+                    </li>
+                </ul>
+                <hr class="leftHR" >
+            </div>
+        </section>
+
+        <section class="rightSection">
+            <div id="aboutPart">
+                <h1>Bio :</h1>
+                <hr class="rightHR">
+                <input id="bioInput" class="leftInput2" placeholder="Enter your bio "> 
+                <p id="bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur voluptatibus saepe itaque a voluptatem ipsam, tempora aperiam aliquam quas veritatis architecto quaerat libero culpa voluptas, earum exercitationem repellendus perspiciatis? Dolorem.</p>
+                <span id="edit23" class="edit">Edit</span>   <span id="delete23" class="delete">Delete</span>
+            </div>
+
+            <div id="expPart">
+                <h1>Experience :</h1>
+                <hr class="rightHR">
+                <ul class="experience">
+                    <li id="exp1Item"><input id="exp1Input" class="leftInput2" placeholder="Enter your first experience "> <span id="exp1"> experience 1 </span> <span id="edit19" class="edit">Edit</span>   <span id="delete19" class="delete">Delete </span> </li>
+                    <li id="exp2Item"><input id="exp2Input" class="leftInput2" placeholder="Enter your second experience "> <span id="exp2"> experience 2 </span> <span id="edit20" class="edit">Edit</span>   <span id="delete20" class="delete">Delete </span></li>
+                    <li id="exp3Item"><input id="exp3Input" class="leftInput2" placeholder="Enter your third experience "> <span id="exp3"> experience 3 </span> <span id="edit21" class="edit">Edit</span>   <span id="delete21" class="delete">Delete </span></li>
+                    <li id="exp4Item"><input id="exp4Input" class="leftInput2" placeholder="Enter your forth experience "> <span id="exp4"> experience 4 </span> <span id="edit22" class="edit">Edit</span>   <span id="delete22" class="delete">Delete </span></li>
+                </ul>
+            </div>
+
+            <div id="langPart">
+                <h1>Languages :</h1>
+                <hr class="rightHR">
+                <ul class="languages">
+                    <li id="lang1Item"> <input id="lang1Input" class="leftInput2" placeholder="Enter your first language "> <span id="lang1">Language 1 </span> &ensp;:&ensp; <span id="edit24" class="edit">Edit</span>   <span id="delete24" class="delete">Delete </span> <input id="lang1LevelInput" class="leftInput2" placeholder="Enter your level "> <span id="lang1Level" class="rated">Elementary Proficiency</span><span id="edit25" class="edit">Edit</span>   <span id="delete25" class="delete">Delete </span></li>
+                    <li id="lang2Item"> <input id="lang2Input" class="leftInput2" placeholder="Enter your second language "> <span id="lang2">Language 2 </span> &ensp;:&ensp; <span id="edit26" class="edit">Edit</span>   <span id="delete26" class="delete">Delete </span> <input id="lang2LevelInput" class="leftInput2" placeholder="Enter your level "> <span id="lang2Level" class="rated">Elementary Proficiency</span><span id="edit27" class="edit">Edit</span>   <span id="delete27" class="delete">Delete </span></li>
+                    <li id="lang3Item"> <input id="lang3Input" class="leftInput2" placeholder="Enter your third language "> <span id="lang3">Language 3 </span> &ensp;:&ensp; <span id="edit28" class="edit">Edit</span>   <span id="delete28" class="delete">Delete </span> <input id="lang3LevelInput" class="leftInput2" placeholder="Enter your level "> <span id="lang3Level" class="rated">Elementary Proficiency</span><span id="edit29" class="edit">Edit</span>   <span id="delete29" class="delete">Delete </span></li>
+                    <li id="lang4Item"> <input id="lang4Input" class="leftInput2" placeholder="Enter your fourth language "> <span id="lang4">Language 4 </span> &ensp;:&ensp; <span id="edit30" class="edit">Edit</span>   <span id="delete30" class="delete">Delete </span> <input id="lang4LevelInput" class="leftInput2" placeholder="Enter your level "> <span id="lang4Level" class="rated">Elementary Proficiency</span><span id="edit31" class="edit">Edit</span>   <span id="delete31" class="delete">Delete </span></li>
+                    
+                    
+                </ul>
+            </div>
+            </div>
+
+        </section>
+
+    </section>
+
+
+    <!-- <main>
+        <section class="hero2">
+
+            <div class="text-wrapper">
+                <h1 class="headline">Our Team </h1>
+               
+            </div>
+        </section>
+        <section class="us">
+            <ul>
+                <li><img src="/Images/MR.ashqar.jpg" alt="Mahmood Alashqar"  /></li>
+                <li><img src="/Images/Barqawi.jpg" alt="Mohammad Barqawi"  /></li>
+                <li><img src="/Images/Qusai.jpg" alt="Qusai Al-amart"  /></li>
+                <li><img src="/Images/Abeer.jpg" alt="Abeer Al-Rafati"  /></li>
+                <li><img src="/Images/Dania.jpg" alt="Dania abughoush"  /></li>
+            </ul>
+    </main> -->
+
+    <!-- <footer>
+        <section class="site-info">
+            <h4 class="site-copyright">
+                
+            </footer><ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
+            
+        &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<img class="SEEDS" &nbsp;src="https://www.design-seeds.com/wp-content/uploads/2017/10/SEEDS-e1508710555140.png">  Design MADQM®  are registered trademarks of MADQM Design Consultancy LLC, all rights reserved | © 2009-2021 MADQM Design Consultancy LLC
+            </h4>
+            
+        
+        
+        
+        
+         </section>
+    </footer> 
+    <div id="print">
+        <h3>Welcome To Veewom</h3>
+        <p>This is a Sample Pararaph</p>
+   </div>
+   <div id="print-btn"></div> -->
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    <!-- <script src="/JS/temprory.js"></script> -->
+    <script src="JS/temp1.js"></script>
+</body>
+</html>
